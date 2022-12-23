@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>UESTC_MlHomeWork</title>
+</head>
+
+    <body>
+    <img src="/static/HuaWeiLOGO.jpg" style="float:right" width="150" height="150"  />
+    <img src="/static/UESTCLOGO.jpg" style="float:right" width="150" height="150" />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="text-align: center">请在下面提交框中提交想要进行验证的阿拉伯数字图像</h3>
+        <div style=”width:100%;text-align:center ”>
+            <form method="post" action="http://localhost:5000/upload/" enctype="multipart/form-data" class="centered">
+            <input type="file" size="30" name="photo"/>
+            <br>
+            <input type="text" class="txt_input" name="name" style="margin-top:15px;"/>
+            <input type="submit" value="提交图片" class="button-new" style="margin-top:15px;"/>
+            </form>
+        </div>
+    </body>
+</html>

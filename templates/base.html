@@ -1,0 +1,95 @@
+{%extends "bootstrap/base.html"%}
+ 
+{%block title %}UESTC_MlHomeWork{% endblock %}
+ 
+{%block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">首页</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/upload/">开始手写数字推理</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+  <h1> 基于华为mindspore深度学习框架和inferemote远程推理框架的AlexNet手写数字识别Web应用</h1>
+  <hr>
+  <div class="text-right">
+      <img src="/static/UESTCLOGO.jpg" height="150" width="150" class="rounded float-right" alt="...">
+      <img src="/static/HuaWeiLOGO.jpg" height="150" width="150" class="rounded float-right" alt="...">
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+<h3>小组成员</h3>
+  <div id="myCarousel" class="carousel slide">
+          <!-- 轮播（Carousel）指标 -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- 轮播（Carousel）项目 -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active" style="text-align: center">
+                  <img src="/static/wlz.jpg" class="img-responsive" alt="#" style="width: 30%; display: inline-block">
+                  <div class="carousel-caption">
+                  王龙志
+                  </div>
+              </div>
+              <div class="item" style="text-align: center">
+                  <img src="/static/lc.jpg" class="img-responsive" alt="#" style="width: 30%; display: inline-block">
+                  <div class="carousel-caption">
+                  凌晨
+                  </div>
+              </div>
+              <div class="item" role="listbox" style="text-align: center">
+                  <img src="/static/wyj.jpg" class="img-responsive" alt="#" style="width: 30%; display: inline-block">
+                  <div class="carousel-caption">
+                  魏煜江
+                  </div>
+              </div>
+
+          </div>
+          <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+      </div>
+
+  <h3>示例：</h3>
+  <div style="text-align: center">
+    <img src="/static/example.png" class="text-center">
+    <img src="/static/example2.png" class="text-center">
+    <br>
+    <h3><a style="float: left" href="https://www.bilibili.com/video/BV1Wg411b7aF/?vd_source=6f8003c7f384d9ec853a735c71e66571">视频演示</a><br></h3>
+
+  </div>
+    <div class="text-center">
+          <a href="/upload/" class="btn btn-primary" οnclick="doSubmit();return false;">开始手写数字识别推理</a>
+    </div>
+
+</div>
+
+{% endblock %}
