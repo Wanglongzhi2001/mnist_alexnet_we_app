@@ -2,7 +2,9 @@
 ![image](https://github.com/Wanglongzhi2001/mnist_alexnet_we_app/blob/main/asset/home.png)
 ![image](https://github.com/Wanglongzhi2001/mnist_alexnet_we_app/blob/main/asset/result.png)
 
-
+## 基本功能
+- 识别MNIST原数据集图片
+- 识别用户自行上传的非MNIST数据集的数字图片(程序会自动灰度化和resize图片)
 ## 配置
 |  深度学习框架   | 远程推理框架  | Web框架  | 前端  |
 |  ----  | ----  | ----  | ----  |
