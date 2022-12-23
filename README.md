@@ -1,0 +1,1 @@
+# mnist_alexnet_we_app
